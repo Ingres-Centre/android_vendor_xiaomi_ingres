@@ -1,0 +1,13 @@
+{
+  "/": "PreviewLDC parameters",
+  "StructM": {
+    "paramS": 0,
+    "paramUD": 1.0,
+    "paramFD": 0,
+    "paramF": 0.001,
+    "paramL": 0.4,
+    "paramSW": 3264,
+    "paramSH": 2448,
+    "paramER": 1.0
+  }
+}

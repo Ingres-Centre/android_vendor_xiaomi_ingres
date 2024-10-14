@@ -1,0 +1,145 @@
+multiCameraLogicalXMLFile=ingres.xml
+logInfoMask=0x10098
+overrideLogLevels=0x1F
+enableTxtLogging=1
+offlineLogNumber=20
+offlineLoggerEnableBackupLog=FALSE
+
+pdafHWEnable=TRUE
+disablePDAF=FALSE
+# PDAF does not show the focus area frame, CAF show the focus area frame
+disableFocusIndication=1
+
+enableNCSService=TRUE
+
+# Bokeh
+isPhyicalMultiCameraSupported=TRUE
+bokehVendorID=3
+ismfnrbokehsupported=TRUE
+
+#enablelogformat
+isVideoLogformatSupported=TRUE
+
+#enable supernight and SE
+MIVISuperNightSupportMask=0x0303
+
+# override Flash Current
+overrideFlashTorchCurrent=200
+overrideFlashVideoLightCurrent=150
+overrideFlashSnapshotLightCurrent=560
+overrideFlashPreviewLightCurrent=150
+
+# MFHDR enable Snapshot Mode
+SupportedAlgoEngineHdr=1
+
+# Video EIS
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K,3001--8K
+vsquality=5@30|6@30|6@60|8@30|8@60|3001@24
+iseispreviewSupported=TRUE
+isFrontVHdrSupported=TRUE
+
+#enablemimovie
+isVideoMimovieSupported=TRUE
+
+# Video skinbeautifier/AI/Filter/Bokeh
+isBeautyMakeupSupported=TRUE
+isVideoBeautifierSupported=TRUE
+isVideoFilterSupported=TRUE
+superVideoFilterVersion=1
+isVideoBeautyEISSupported=TRUE
+isVideoBeautyScreenshotSupported=TRUE
+isColorRetentionSupported=TRUE
+isVideoColorRetentionBackSupported=TRUE
+isVideoBokehSupported=TRUE
+isFrontVideoBokehSupported=TRUE
+AIEnhancementVersion=34
+
+# TS skinbeautifier
+enableEGLCache=TRUE
+
+#disable 3A debug
+#enable3ADebugData=TRUE
+#enableTuningMetadata=TRUE
+
+#DME
+enableDMEbasedMCTF=1
+
+# For CTS Reprocess Size
+minReprocessInputWidth=0x1FFF
+minReprocessInputHeight=0x1FFF
+
+#SW SYNC
+multiCameraSWFrameSyncInterval=5
+multiCameraHWSyncMask=0
+multiCameraFPSMatchMask=0x1
+multiCameraFrameSyncMask=0x1
+multiCameraExposureTimeMatch=TRUE
+enableExposureTimeMatch=TRUE
+#multiCameraDetectFrameSync=TRUE
+
+#For Burstshot
+pluginBurstReqCnt=0x2
+pluginBurstReqCntForHeif=0x3
+
+#For VideoHdrSupport
+isVideoHdrSupported=FALSE
+
+#Flicker
+enableSpectralSensor=1
+luxIndexThreashouldForFlicker=300.000
+
+# HalBufferMgrMode disable
+halBufferMgrMode=0
+
+# Bit Mask for HighQualityQuickShot configure
+# Bit[0]       - Support MFSR/LLS in SAT mode
+# Bit[1]       - Support HDR in SAT mode
+# Bit[2]       - Support SR in SAT mode
+# Bit[3]       - Support SuperNightSE in SAT mode
+# Bit[4~7]     - reserve
+# Bit[8]       - Support Bokeh MFNR in Back Camera
+# Bit[9]       - Support Bokeh HDR in Back Camera
+# Bit[10]      - Support MFNR in Front Camera
+# Bit[11]      - Support HDR in Front Camera
+# Bit[12]      - Support Bokeh in Front Camera
+# Bit[13]      - Support  Macro Mode
+# Bit[14~15]   - reserve
+# Bit[16~19]   - HighQualityQuickShot queue length(max number of HighQualityQuickShot)
+# Bit[20]      - Support reuse RDI buffer or not
+# Bit[21]      - Support Limit MFNR input frames or not
+# Bit[22~31]   - reserve
+HighQualityQuickShotSupportMask=0x031F03
+
+# Bit Mask for HighQualityQuickShotDelayTime configure
+# Bit[0 ~ 3]   - DelayTime XX * 100 ms of Bokeh MFNR in Back Camera
+# Bit[4 ~ 7]   - DelayTime XX * 100 ms of Bokeh MFNR in Front Camera
+# Bit[8 ~ 11]  - DelayTime XX * 100 ms of Back Normal Capture
+# Bit[12 ~ 15] - DelayTime XX * 100 ms of HDR in Front Camera
+# Bit[16 ~ 19] - DelayTime XX * 100 ms of HDR in Back Camera
+# Bit[20 ~ 23] - DelayTime XX * 100 ms of SuperNightSe in Back Camera
+# Bit[24 ~ 27] - DelayTime XX * 100 ms of SR in Back Camera
+# Bit[28 ~ 31] - DelayTime XX * 100 ms of Front Normal Capture
+# Bit[32 ~ 35] - DelayTime XX * 100 ms of MacroMode in Back Camera
+# Bit[36 ~ 39] - DelayTime XX * 100 ms of Bokeh HDR in Back Camera
+# Bit[40 ~ 63] - reserv
+QuickShotDelayTimeMask=0x4222222244
+
+#enable earlyPCR
+numPCRsBeforeStreamOn=1
+
+# Quickview
+enableCHIPartialData=1
+quickviewsupport=TRUE
+quickviewmask=0x2F07
+addScanIn3ALockStatus=1
+
+# For FD
+FDClient=FDHWHybrid
+
+enablechirecovery=FALSE
+
+#thermal
+enableBLMClient=1
+
+#Enable GPU rotate
+enableGPURotation=TRUE

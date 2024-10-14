@@ -1,0 +1,28 @@
+on boot
+    #change owner of aw22xxx led
+    chown system system /sys/class/leds/aw22xxx_led/reg
+    chmod 0664 /sys/class/leds/aw22xxx_led/reg
+    chown system system /sys/class/leds/aw22xxx_led/hwen
+    chmod 0664 /sys/class/leds/aw22xxx_led/hwen
+    chown system system /sys/class/leds/aw22xxx_led/cfg
+    chmod 0664 /sys/class/leds/aw22xxx_led/cfg
+    chown system system /sys/class/leds/aw22xxx_led/effect
+    chmod 0664 /sys/class/leds/aw22xxx_led/effect
+    chown system system /sys/class/leds/aw22xxx_led/imax
+    chmod 0664 /sys/class/leds/aw22xxx_led/imax
+    chown system system /sys/class/leds/aw22xxx_led/rgb
+    chmod 0664 /sys/class/leds/aw22xxx_led/rgb
+    chown system system /sys/class/leds/aw22xxx_led/fw
+    chmod 0664 /sys/class/leds/aw22xxx_led/fw
+    chown system system /sys/class/leds/aw22xxx_led/frq
+    chmod 0664 /sys/class/leds/aw22xxx_led/frq
+
+on charger
+    #change owner of aw22xxx led
+    chown system system /sys/class/leds/aw22xxx_led/brightness
+    chmod 0664 /sys/class/leds/aw22xxx_led/brightness
+    chown system system /sys/class/leds/aw22xxx_led/effect
+    chmod 0664 /sys/class/leds/aw22xxx_led/effect
+    chown system system /sys/class/leds/aw22xxx_led/cfg
+    chmod 0664 /sys/class/leds/aw22xxx_led/cfg
+
