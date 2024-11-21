@@ -1,0 +1,180 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "INGRES"],
+    "soc_id": ["291", "246", "339", "415","457"]
+  },
+  "tcs3408_platform":{
+    "owner": "sns_tcs3408",
+    ".config":{
+      "owner": "sns_tcs3408",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "2",
+        "data": "5"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "41"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "1",
+        "data": "162"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "1",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_tcs3408",
+      ".fac_cal":{
+        "owner": "sns_tcs3408",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      },
+      ".fac_cal_orignal":{
+        "owner": "sns_tcs3408",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      },
+      ".factory_config":{
+        "owner": "sns_tcs3408",
+        "parm1":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm2":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm3":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm4":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm5":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm6":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tcs3408",
+      ".fac_cal":{
+        "owner": "sns_tcs3408",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "60.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "40.0"
+        }
+      }
+    },
+    ".rgb":{
+      "owner": "sns_tcs3408",
+      ".fac_cal":{
+        "owner": "sns_tcs3408",
+        "scale_l":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_h":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      }
+    },
+    ".coefficient":{
+      "owner": "sns_tcs3408",
+      "0":{ "type": "flt", "ver": "4",
+        "data": "200"
+      },
+      "1":{ "type": "flt", "ver": "3",
+        "data": "0.056904"
+      },
+      "2":{ "type": "flt", "ver": "3",
+        "data": "-0.015207"
+      },
+      "3":{ "type": "flt", "ver": "3",
+        "data": "0.189105"
+      },
+      "4":{ "type": "flt", "ver": "3",
+        "data": "-0.142894"
+      },
+      "5":{ "type": "flt", "ver": "3",
+        "data": "0.139827"
+      },
+      "6":{ "type": "flt", "ver": "3",
+        "data": "-0.115389"
+      },
+      "7":{ "type": "flt", "ver": "3",
+        "data": "0.018966"
+      },
+      "8":{ "type": "flt", "ver": "3",
+        "data": "-0.047547"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "1",
+        "data": "0.1"
+      },
+      "11":{ "type": "flt", "ver": "1",
+        "data": "1.0"
+      }
+    },
+    ".flicker_para":{
+      "owner": "sns_tcs3408",
+      "fd_atime":{ "type": "flt", "ver": "1",
+        "data": "500.0"
+      },
+      "fd_init_gain":{ "type": "flt", "ver": "1",
+        "data": "128.0"
+      },
+      "reserve_0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "reserve_1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "reserve_2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  }
+}

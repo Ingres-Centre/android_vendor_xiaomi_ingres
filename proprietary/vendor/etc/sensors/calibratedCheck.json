@@ -1,0 +1,14 @@
+[
+{"parsedFileInfo":{"rootFile":"/mnt/vendor/persist/sensors/registry/registry/icm4x6xx_0_platform.accel.fac_cal.bias","verDepth":3,"rootObject":"icm4x6xx_0_platform.accel.fac_cal.bias","subRootObject1":"x","subRootObject2":"ver"},
+"originalFileInfo":{"rootFile":"/vendor/etc/sensors/config/sm8450_icm4x6xx_0.json","verDepth":6,"rootObject":"icm4x6xx_0_platform","subRootObject1":".accel","subRootObject2":".fac_cal","subRootObject3":".bias","subRootObject4":"x","subRootObject5":"ver"}},
+
+{"parsedFileInfo":{"rootFile":"/mnt/vendor/persist/sensors/registry/registry/icm4x6xx_0_platform.gyro.fac_cal.bias","verDepth":3,"rootObject":"icm4x6xx_0_platform.gyro.fac_cal.bias","subRootObject1":"x","subRootObject2":"ver"},
+"originalFileInfo":{"rootFile":"/vendor/etc/sensors/config/sm8450_icm4x6xx_0.json","verDepth":6,"rootObject":"icm4x6xx_0_platform","subRootObject1":".gyro","subRootObject2":".fac_cal","subRootObject3":".bias","subRootObject4":"x","subRootObject5":"ver"}},
+
+{"parsedFileInfo":{"rootFile":"/mnt/vendor/persist/sensors/registry/registry/tcs3701_platform.channel.fac_cal","verDepth":3,"rootObject":"tcs3701_platform.channel.fac_cal","subRootObject1":"data_cch","subRootObject2":"ver"},
+"originalFileInfo":{"rootFile":"/vendor/etc/sensors/config/sm8450_tcs3701.json","verDepth":5,"rootObject":"tcs3701_platform","subRootObject1":".channel","subRootObject2":".fac_cal","subRootObject3":"data_cch","subRootObject4":"ver"}},
+
+{"parsedFileInfo":{"rootFile":"/mnt/vendor/persist/sensors/registry/registry/tcs3408_platform.als.fac_cal","verDepth":3,"rootObject":"tcs3408_platform.als.fac_cal","subRootObject1":"scale","subRootObject2":"ver"},
+"originalFileInfo":{"rootFile":"/vendor/etc/sensors/config/sm8450_tcs3408.json","verDepth":5,"rootObject":"tcs3408_platform","subRootObject1":".als","subRootObject2":".fac_cal","subRootObject3":"scale","subRootObject4":"ver"}}
+
+]
