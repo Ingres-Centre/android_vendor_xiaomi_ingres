@@ -659,6 +659,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_headphone.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/rfsa/adsp/misound_res_spk4ch.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk4ch.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/android.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/android.hardware.camera.provider@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.5.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/android.hardware.camera.provider@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.6.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/android.hardware.camera.provider@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.7.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/com.qti.eeprom.ingres_aac_ov8856_gt24p64e_ultra_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.ingres_aac_ov8856_gt24p64e_ultra_eeprom.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/com.qti.eeprom.ingres_ofilm_gc02m1_bl24sa64_macro_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.ingres_ofilm_gc02m1_bl24sa64_macro_eeprom.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/com.qti.eeprom.ingres_sunny_imx596_gt24p64e_front_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.ingres_sunny_imx596_gt24p64e_front_eeprom.so \
@@ -903,6 +907,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libdeflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeflicker.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libellv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libellv.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libexif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexif.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10plus.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libhexagon_controller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_controller.so \
