@@ -6,7 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/ingres
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ingres/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
     vendor/xiaomi/ingres/proprietary/vendor/etc/displayconfig/display_id_4630946545580055170.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946545580055170.xml \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libexif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexif.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/liblz4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblz4.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V2-ndk.so \
     vendor/xiaomi/ingres/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/ingres/proprietary/vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider@2.7-service_64 \
     vendor/xiaomi/ingres/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service \
@@ -76,6 +80,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/deblur_sd_opencl_params.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/deblur_sd_opencl_params.bin \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/deblur_txt_dsp.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/deblur_txt_dsp.dlc \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/deblur_txt_gpu.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/deblur_txt_gpu.dlc \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/camera/dof_mecp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_mecp.bin \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/ellc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ellc.bin \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/ellc_params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ellc_params.json \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/hdrcheckerparamsettings.yml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hdrcheckerparamsettings.yml \
@@ -89,6 +94,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/mialgo_seg_ldc_parameters.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mialgo_seg_ldc_parameters.json \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/mibokeh_855_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_855_opencl.bin \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/mibokeh_855_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_855_parameter.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model/dof_model/capture_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_cache \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model/dof_model/capture_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_model \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model/dof_model/capture_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_policy \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model/rt_model/preview_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/preview_cache \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model/rt_model/preview_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/preview_model \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model/rt_model/preview_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/preview_policy \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model_ai_dxo.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_ai_dxo.dlc \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model_aiie_cap.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_aiie_cap.dlc \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/model_back.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_back.dlc \
@@ -594,6 +605,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
     vendor/xiaomi/ingres/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/xiaomi/ingres/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_aac_ov8856_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_aac_ov8856_ultra.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_ofilm_gc02m1_macro.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_sunny_imx596_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_sunny_imx596_front.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_sunny_imx686_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_sunny_imx686_wide.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/hw/audio.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.taro.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagm.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib/libar-pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-pal.so \
@@ -856,6 +871,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libAF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAF.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libHISCppAlgos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHISCppAlgos.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libMegviiFacepp-0.5.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMegviiFacepp-0.5.2.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libQnnHtpAltPrepV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpAltPrepV69Stub.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libSnpeCpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeCpu.so \
@@ -907,7 +923,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libdeflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeflicker.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libellv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libellv.so \
-    vendor/xiaomi/ingres/proprietary/vendor/lib64/libexif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexif.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10plus.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libhexagon_controller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_controller.so \
@@ -918,6 +933,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libkaraokepal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkaraokepal.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmegface.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmfGhostDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfGhostDetection.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmiai_deblur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_deblur.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmiai_portraitsupernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_portraitsupernight.so \
