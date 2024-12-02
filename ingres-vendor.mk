@@ -11,7 +11,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libexif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexif.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/liblz4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblz4.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.qti.hardware.display.config-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.config-V2-ndk.so \
+    vendor/xiaomi/ingres/proprietary/system_ext/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.seccam@1.0.so \
+    vendor/xiaomi/ingres/proprietary/system_ext/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.seccam@1.0.so \
     vendor/xiaomi/ingres/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
+    vendor/xiaomi/ingres/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.7-virtual-camera-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.7-virtual-camera-service \
     vendor/xiaomi/ingres/proprietary/vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider@2.7-service_64 \
     vendor/xiaomi/ingres/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service \
     vendor/xiaomi/ingres/proprietary/vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mise/Mise_acdb_cal.acdb \
@@ -362,6 +365,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/ingres/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/xiaomi/ingres/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.json \
+    vendor/xiaomi/ingres/proprietary/vendor/etc/init/android.hardware.camera.provider@2.7-virtual-camera-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.7-virtual-camera-service.rc \
     vendor/xiaomi/ingres/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/ingres/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
     vendor/xiaomi/ingres/proprietary/vendor/etc/kvh2xml.xml:$(TARGET_COPY_OUT_VENDOR)/etc/kvh2xml.xml \
@@ -605,14 +609,73 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
     vendor/xiaomi/ingres/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/xiaomi/ingres/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@3.4-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-external-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@3.5-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-external-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera.device@3.6-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.6-external-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.sensormodule.ingres_aac_ov8856_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ingres_aac_ov8856_ultra.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.sensormodule.ingres_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ingres_ofilm_gc02m1_macro.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.sensormodule.ingres_sunny_imx596_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ingres_sunny_imx596_front.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.sensormodule.ingres_sunny_imx686_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ingres_sunny_imx686_wide.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_aac_ov8856_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_aac_ov8856_ultra.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_ofilm_gc02m1_macro.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_sunny_imx596_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_sunny_imx596_front.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/camera/com.qti.tuned.ingres_sunny_imx686_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ingres_sunny_imx686_wide.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.device@3.2-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.device@3.3-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.device@3.4-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.device@3.5-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.device@3.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.device@3.6-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.device@3.7-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.device@3.7-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.provider@2.4-legacy.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.provider@2.5-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.provider@2.5-legacy.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.provider@2.6-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.provider@2.6-legacy.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/camx.provider@2.7-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camx.provider@2.7-legacy.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib/hw/audio.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.taro.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libAF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAF.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libMegviiFacepp-0.5.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMegviiFacepp-0.5.2.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libagm.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib/libar-pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-pal.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libcamxcommonutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxcommonutils.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libcamxsettingsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxsettingsmanager.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libcv_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcv_common.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvface_api.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayconfig.qti.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libeva.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeva.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libgralloc.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc.qti.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgrallocutils.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib/libkaraokepal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkaraokepal.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmegface.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libmialgo_ai_vision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmialgo_ai_vision.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libmialgo_globalsaliency.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmialgo_globalsaliency.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libmialgo_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmialgo_utils.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libos.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdMetaData.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libqshcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqshcamera.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_dsp_domains_v2.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libsnpe_dsp_domains_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnpe_dsp_domains_v3.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynx.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthreadutils.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib/rfsa/adsp/bm2n00.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n00.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/rfsa/adsp/bm2n01.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n01.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib/rfsa/adsp/bm2n02.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm2n02.bin \
@@ -678,6 +741,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/android.hardware.camera.provider@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.5.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/android.hardware.camera.provider@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.6.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/android.hardware.camera.provider@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.7.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@3.4-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-external-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@3.5-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-external-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera.device@3.6-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.6-external-impl.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/com.qti.eeprom.ingres_aac_ov8856_gt24p64e_ultra_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.ingres_aac_ov8856_gt24p64e_ultra_eeprom.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/com.qti.eeprom.ingres_ofilm_gc02m1_bl24sa64_macro_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.ingres_ofilm_gc02m1_bl24sa64_macro_eeprom.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/com.qti.eeprom.ingres_sunny_imx596_gt24p64e_front_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.ingres_sunny_imx596_gt24p64e_front_eeprom.so \
@@ -782,6 +853,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/libQnnHtpAltPrepV69Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/libQnnHtpAltPrepV69Skel.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/libQnnHtpAltPrepV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/libQnnHtpAltPrepV69Stub.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/libQnnHtpAltPrepV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/libQnnHtpAltPrepV69Stub.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/plugins/com.xiaomi.plugin.anchor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/plugins/com.xiaomi.plugin.anchor.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so \
@@ -872,11 +945,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libAF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAF.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libHISCppAlgos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHISCppAlgos.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libMegviiFacepp-0.5.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMegviiFacepp-0.5.2.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libQnnHtpAltPrepV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpAltPrepV69Stub.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libSnpeCpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeCpu.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libSnpeGpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeGpu.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libSnpeHtpV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpV69Stub.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libTrueSight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrueSight.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libTrueSight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrueSight.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/lib_sr_models.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_sr_models.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm.so \
@@ -920,10 +995,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libcom.xiaomi.metadatautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.metadatautils.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libcom.xiaomi.pluginutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.xiaomi.pluginutils.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libcrussp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrussp.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libcv_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcv_common.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libdeflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeflicker.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libellv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libellv.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libeva.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeva.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libgralloc.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc.qti.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrallocutils.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10plus.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libhexagon_controller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_controller.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libhis_11_yaml_build.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhis_11_yaml_build.so \
@@ -945,6 +1025,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmialgo_ie_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ie_capture.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmialgo_ie_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ie_preview.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmialgo_image_colourkeeping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_image_colourkeeping.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libmialgo_pureShot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_pureShot.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmialgo_pureShot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_pureShot.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmialgo_pureView.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_pureView.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmialgo_rfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_rfs.so \
@@ -968,6 +1049,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr_t4.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmorpho_ubwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_ubwc.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libmorpho_ubwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_ubwc.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmorpho_ultrazoom_eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_ultrazoom_eis.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_video_stabilizer.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
@@ -976,6 +1058,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libopencv3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv3a.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdMetaData.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libqll.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll10.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libqllengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqllengine.so \
@@ -984,16 +1067,24 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/librelight_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librelight_only.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libsdk_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdk_sr.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libsfeShiftExtrapolation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfeShiftExtrapolation.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libsnpe_dsp_domains_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v3.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libssccalapi@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssccalapi@2.0.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libsupermoon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsupermoon.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libvideoBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoBokeh.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libvideofilter_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideofilter_only.so \
@@ -1005,12 +1096,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libvidhance_ldc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_ldc.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libvidhance_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_stabilizer.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libvidhance_super_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_super_stabilization.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libwa_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_depth.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libwa_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_refocus.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/libwa_rtdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_rtdof.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libxmi_hdr_checker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_hdr_checker.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libxmi_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_high_dynamic_range.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libxmi_high_dynamic_range_cdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_high_dynamic_range_cdsp.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/libxmi_slow_motion_mein.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_slow_motion_mein.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.qti.hardware.camera.aon@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.aon@1.0-service-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.qti.hardware.camera.aon@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.aon@1.0.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
+    vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.bgservice@1.0.so \
     vendor/xiaomi/ingres/proprietary/vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so \
